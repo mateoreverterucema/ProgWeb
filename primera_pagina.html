@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, 
+        initial-scale=1.0">
+        <title>Mi primer documento HTML</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+        <h1>Esta es mi primer página WEB</h1>
+        <p>
+            Y en este caso vamos a poner en <strong> relevancia </strong> cierta parte del texto
+        </p>
+        <p>
+            Y en este caso vamos a poner en <strong> relevancia </strong> <em>cierta parte del texto</em>
+        </p>
+        <p>
+            lets go motherfucker, lets fucking do this shit. viva <abbr title="HiperText Markup Language">HTML</abbr>
+        </p>
+        <div align="center">
+            <p> Mi párrafo </p>
+            <a href="https://ucema.edu.ar">Ir a UCEMAA</a>
+            <p> otro párrafo</p>
+            <br>
+            <img src="img/ucema.png" alt="foto de UCEMA" height="100px">
+            <br>
+            <video src="video/Sin_Audio.mp4" width = "304" controls autoplay muted> </video>
+            <br>
+            <a href="http://www.ucema.com.ar"
+                title="Universidad del CEMA"
+                target="_blank" tabindex="1">
+                Ir a UCEMA
+            </a>
+        </div>
+        <ol>
+            <li>punto uno</li>
+            <li>punto dos</li>
+            <li>punto tres</li>
+        </ol>
+        <ul>
+            <li>Esto</li>
+            <li>Lo otro</li>
+            <li>Lo de más allá</li>
+        </ul>
+        <button
+            id="01"
+            >
+            <a href="http://www.ucema.com.ar"
+                title="Universidad del CEMA"
+                target="_blank" tabindex="1">
+                Click Aquí
+            </a>
+        </button>
+        <form>
+            <input placeholder="Nombre" name="nombre" type="text">
+            <input placeholder="Nombre" name="nombre" type="text" required>
+            <input placeholder="Cantidad" name="cantidad" type="number" min="10" max="100">
+            <input placeholder="Cantidad" name="cantidad" type="number" min="10" max="1000" step="0.01">
+            <input placeholder="Cantidad" name="cantidad" type="number" min="18" max="99" value="30">
+            <input placeholder="Contraseña" name="contraseña" type="password">
+            <input placeholder="Info" name="info" type="checkbox"> Quiero recibir más info
+            <input placeholder="Info" name="info" type="checkbox">
+            Inserte fecha de nacimiento: <input name="fechnac" type="date">
+            <input placeholder="Mail" name="mail" type="email"><br>
+            <input name="sexo" type="radio" value="Masculino">Masculino<br>
+            <input name="sexo" type="radio" value="Femenino">Femenino<br>
+            <input name="sexo" type="radio" value="Otro">Otro<br>
+            Seleccione la imágen: <input name="foto" type="file">
+            <input name="submit" type="submit">
+            <br>
+            Hobbies<br>
+            <textarea name="hobbies" rows="10" cols="50"></textarea>
+            <br>
+            Indique su lenguaje de programación favorito:
+            <select name="lenguaje">
+                <option value="ja">JavaScript</option>
+                <option value="java">Java </option>
+                <option value="python">Python </option>
+                <option value="otros">Otros </option>
+            </select>
+            <br>
+            Indique deporte/s
+            <select name="deporte" multiple>
+                <option value="futbol">Futbol</option>
+                <option value="basket">Basket </option>
+                <option value="tenis">Tenis </option>
+                <option value="golf">Golf </option>
+            </select>
+        </form>
+            <br>
+            <form>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="nombre"> Nombre: </label> <input name='nombre' type='text' tabindex='1'>
+                    <label for="apellido"> Apellido: </label> <input name='apellido' type='text'tabindex='2'>
+                    <label for=" fechanac"> Fecha de Nacimiento: </label> <input name=' fechanac' type='date' min="1920/01/01" max="2010/12/31" tabindex='3'>
+                </fieldset>
+                <fieldset>
+                    <legend>Información de la Compra</legend>
+                    <label for="producto"> Producto: </label> <input name='producto' type='text' tabindex='4'>
+                    <label for="cantidad"> Cantidad: </label> <input name='cantidad' type='number' tabindex='5'>
+                    <label for="monto"> Monto: </label> <input name='monto' type='number' step="0.01" tabindex='6'>
+                </fieldset>
+            </form>
+    </body>
+</html>
+
